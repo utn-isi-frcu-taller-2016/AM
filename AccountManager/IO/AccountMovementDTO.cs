@@ -1,14 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace AccountManager.Domain
+namespace AccountManager.IO
 {
     /// <summary>
-    /// Clase de dominio y de datos de movimientos de la cuenta
+    /// Clase DTO de Movimiento de la cuenta
     /// </summary>
-    public class AccountMovement
+    class AccountMovementDTO
     {
         /// <summary>
-        /// Id del movimiento
+        /// Identificadordel movimiento
         /// </summary>
         public int Id { get; set; }
 
@@ -20,12 +24,11 @@ namespace AccountManager.Domain
         /// <summary>
         /// Descripcion del movimiento
         /// </summary>
-        public String Description { get; set; }
+        public string Description { get; set; }
 
         /// <summary>
-        /// Monto del movimiento
+        /// Monto
         /// </summary>
         public double Amount { get; set; }
-
     }
 }

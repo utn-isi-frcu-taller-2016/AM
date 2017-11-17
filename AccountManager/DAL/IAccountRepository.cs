@@ -3,14 +3,15 @@ using System.Collections.Generic;
 
 namespace AccountManager.DAL
 {
+    /// <summary>
+    /// Interfaz de repositorio de cuentas
+    /// </summary>
     interface IAccountRepository : IRepository<Account>
     {
-
-        double GetAccountBalance(Account pAccount);
-
+        /// <summary>
+        /// Obtencion de cuentas en rojo
+        /// </summary>
+        /// <returns>Cuentas</returns>
         IEnumerable<Account> GetOverdrawnAccounts();
-
-        IEnumerable<AccountMovement> GetLastMovements(Account pAccount, int pCount = 7);
-
     }
 }

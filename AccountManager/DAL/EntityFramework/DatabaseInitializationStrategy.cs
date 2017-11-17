@@ -5,6 +5,9 @@ using System.Data.Entity;
 
 namespace AccountManager.DAL.EntityFramework
 {
+    /// <summary>
+    /// Inicilización de BBDD
+    /// </summary>
     class DatabaseInitializationStrategy : CreateDatabaseIfNotExists<AccountManagerDbContext>
     {
 

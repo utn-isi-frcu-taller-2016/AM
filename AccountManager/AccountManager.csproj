@@ -56,6 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bank.cs" />
     <Compile Include="DAL\EntityFramework\AccountManagerDbContext.cs" />
     <Compile Include="DAL\EntityFramework\AccountRepository.cs" />
     <Compile Include="DAL\EntityFramework\ClientRepository.cs" />
@@ -73,6 +74,8 @@
     <Compile Include="Domain\AccountMovement.cs" />
     <Compile Include="Domain\Client.cs" />
     <Compile Include="Domain\Document.cs" />
+    <Compile Include="IO\AccountDTO.cs" />
+    <Compile Include="IO\AccountMovementDTO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

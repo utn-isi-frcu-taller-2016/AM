@@ -4,6 +4,9 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace AccountManager.DAL.EntityFramework.Mappings
 {
+    /// <summary>
+    /// Clase de mapeo de Cliente
+    /// </summary>
     class ClientMap : EntityTypeConfiguration<Client>
     {
 

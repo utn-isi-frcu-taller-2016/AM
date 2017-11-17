@@ -4,12 +4,24 @@ using System.Data.Entity;
 
 namespace AccountManager.DAL.EntityFramework
 {
+    /// <summary>
+    /// Clase contexto de acceso a DB
+    /// </summary>
     internal class AccountManagerDbContext : DbContext
     {
+        /// <summary>
+        /// Clientes
+        /// </summary>
         public DbSet<Client> Clients { get; set; }
 
+        /// <summary>
+        /// Cuentas
+        /// </summary>
         public DbSet<Account> Accounts { get; set; }
 
+        /// <summary>
+        /// Movimientos de la cuenta
+        /// </summary>
         public DbSet<AccountMovement> AccountMovements { get; set; }
 
         public AccountManagerDbContext() : base("AccountManagerContext")

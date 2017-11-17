@@ -3,6 +3,9 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace AccountManager.DAL.EntityFramework.Mappings
 {
+    /// <summary>
+    /// Clase de mapeo de movimiento de la cuenta
+    /// </summary>
     class AccountMovementMap : EntityTypeConfiguration<AccountMovement>
     {
 

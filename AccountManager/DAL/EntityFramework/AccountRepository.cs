@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace AccountManager.DAL.EntityFramework
 {
-    class AccountRepository : EFRepository<Account, AccountManagerDbContext>, IAccountRepository
+    class AccountRepository : Repository<Account, AccountManagerDbContext>, IAccountRepository
     {
         public AccountRepository(AccountManagerDbContext pContext) : base(pContext)
         {
