@@ -11,26 +11,6 @@ namespace AccountManager.DAL.EntityFramework
         {
         }
 
-        public double GetAccountBalance(Account pAccount)
-        {
-            if (pAccount == null)
-            {
-                throw new ArgumentNullException(nameof(pAccount));
-            }
-
-            return pAccount.Movements.Sum(pMovement => pMovement.Amount);
-        }
-
-        public IEnumerable<AccountMovement> GetLastMovements(Account pAccount, int pCount = 7)
-        {
-            if (pAccount == null)
-            {
-                throw new ArgumentNullException(nameof(pAccount));
-            }
-
-            return pAccount.Movements.OrderBy(pMovement => pMovement.Date).Take(pCount);
-        }
-
         public IEnumerable<Account> GetOverdrawnAccounts()
         {
             return from account in this.iDbContext.Set<Account>()
